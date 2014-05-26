@@ -1,0 +1,21 @@
+.wrapper{
+  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.logo {
+  border: 1px solid red;
+  margin: 0;
+  width: 100%;
+}
+
+path{
+  fill: green;
+}
+
+
+
+
+
+
