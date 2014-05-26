@@ -1,6 +1,44 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 112.5%;
+  line-height: 1.65;
+  color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1;
+  margin-top: 0;
+  text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
+}
+
+h2 {
+  font-size: 48px;
+  font-size: 2.6667rem; /* 48 / 18 = 2.6667 */
+  margin-bottom: 11.1375px;
+  margin-bottom: 0.61875rem;
+}
+
+p {
+  margin: auto auto 1.5em; /* bottom margin for paragraphs */
+}
+
+p + p {
+  margin-top: 1em; /* no top margin on subsequent paragraphs */
+}
+
+
+.sublogo{
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
 .wrapper{
-  border: 1px solid red;
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -10,9 +48,6 @@
   width: 100%;
 }
 
-path{
-  fill: green;
-}
 
 
 
