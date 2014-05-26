@@ -47,6 +47,22 @@ p + p {
 .social-links ul{
   list-style: none;
   width: 100%;
+  clear: both;
+}
+
+.social-links ul li{
+  float: left;
+  margin-right: 10px;
+}
+
+.github_link{
+  display: none;
+}
+
+.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
 }
 
 
