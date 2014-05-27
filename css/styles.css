@@ -55,15 +55,25 @@ p + p {
   margin-right: 10px;
 }
 
-.github_link{
-  display: none;
+.github_link,
+.dribbble_link{
+  display: inline-block;
+  text-indent: 9999px;
+  width: 40px;
+  height: 40px;
+  background: url(../svg/icon_font.svg);
+  opacity: 0.6;
 }
 
-.icon {
-  display: inline-block;
-  width: 25px;
-  height: 25px;
+.dribbble_link {
+  background-position: -40px 0;
 }
+
+.github_link:hover,
+.dribbble_link:hover {
+  opacity: 1;
+}
+
 
 
 
