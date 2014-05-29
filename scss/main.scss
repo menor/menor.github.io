@@ -1,7 +1,7 @@
 @import "bourbon";
 @import "neat";
 @import "bitters/bitters";
-
+@import "icons";
 
 body {
 
@@ -11,5 +11,19 @@ body {
   @include span-columns(12);
   @include row;
   border: 1px solid red;
+}
 
+.social-links {
+  @include row;
+  display: inline-block;
+  background-color: #EEE;
+  padding-bottom: .8em;
+  border-bottom: 1px solid #EEE;
+}
+
+
+.logo {
+  @include span-columns(10);
+  @include shift(1);
+  color: #999;
 }

@@ -1,0 +1,48 @@
+/* Icon font */
+@font-face {
+  font-family: 'menor_awesome';
+  src: url('../fonts/menor_awesome.eot?11995336');
+  src: url('../fonts/menor_awesome.eot?11995336#iefix') format('embedded-opentype'),
+       url('../fonts/menor_awesome.woff?11995336') format('woff'),
+       url('../fonts/menor_awesome.ttf?11995336') format('truetype'),
+       url('../fonts/menor_awesome.svg?11995336#menor_awesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "menor_awesome";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* margin-left: .2em;*/
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-resume:before { content: '\e806'; } /* '' */
+.icon-blog:before { content: '\e802'; } /* '' */
+.icon-floppy:before { content: '\e805'; } /* '' */
+.icon-dribbble:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e800'; } /* '' */
+.icon-instagram:before { content: '\e807'; } /* '' */
+.icon-linkedin:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
