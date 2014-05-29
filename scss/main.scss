@@ -4,10 +4,12 @@
 
 
 body {
+
 }
 
 .wrapper {
-  @include span-columns(6);
+  @include span-columns(12);
   @include row;
-  background: ghostgrey;
+  border: 1px solid red;
+
 }
