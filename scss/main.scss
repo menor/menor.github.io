@@ -1,14 +1,13 @@
 @import "bourbon";
 @import "neat";
+@import "bitters/bitters";
 
 
 body {
-  background: red;
 }
-.element {
-  @include span-columns(6);
 
-  .nested-element {
-    @include span-columns(2 of 6);
-  }
+.wrapper {
+  @include span-columns(6);
+  @include row;
+  background: ghostgrey;
 }
