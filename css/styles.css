@@ -1,9 +1,110 @@
-body {
-  font-family: 'Lato', sans-serif;
-  font-size: 112.5%;
-  line-height: 1.65;
-  color: #444;
+/* Icon font */
+@font-face {
+  font-family: 'menor_awesome';
+  src: url('../fonts/menor_awesome.eot?11995336');
+  src: url('../fonts/menor_awesome.eot?11995336#iefix') format('embedded-opentype'),
+       url('../fonts/menor_awesome.woff?11995336') format('woff'),
+       url('../fonts/menor_awesome.ttf?11995336') format('truetype'),
+       url('../fonts/menor_awesome.svg?11995336#menor_awesome') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "menor_awesome";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+ 
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  /* margin-left: .2em;*/
+ 
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+ 
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-resume:before { content: '\e806'; } /* '' */
+.icon-blog:before { content: '\e802'; } /* '' */
+.icon-floppy:before { content: '\e805'; } /* '' */
+.icon-dribbble:before { content: '\e801'; } /* '' */
+.icon-github:before { content: '\e800'; } /* '' */
+.icon-instagram:before { content: '\e807'; } /* '' */
+.icon-linkedin:before { content: '\e804'; } /* '' */
+.icon-twitter:before { content: '\e803'; } /* '' */
+
+/* gridlover.net */
+body {
+  font-size: 1.1875rem;
+  line-height: 1.925rem;  /* Increase to 2.375rem in wider viewports*/
+  max-width: 760px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 5.5rem;
+  line-height: 7.125rem;
+  margin-top: 4.75rem;
+  margin-bottom: 2.375rem;
+}
+h2 {
+  font-size: 3.3125rem;
+  line-height: 4.75rem;
+  margin-top: 4.75rem;
+  margin-bottom: 2.375rem;
+}
+h3 {
+  font-size: 2rem;
+  line-height: 2.375rem;
+  margin-top: 2.375rem;
+  margin-bottom: 2.375rem;
+}
+h4 {
+  font-size: 1.1875rem;
+  line-height: 2.375rem;
+  margin-top: 2.375rem;
+  margin-bottom: 2.375rem;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 2.375rem;
+  margin-bottom: 2.375rem;
+}
+
+/* Sanitation */
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+b, strong, em, small, code {
+  line-height: 1;
+}
+sup, sub {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+sub {
+  top: 0.4em;
+}
+
+/* End gridlover.net*/
 
 h1,
 h2,
@@ -11,25 +112,19 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
-  margin-top: 0;
   text-rendering: optimizeLegibility; /*  voodoo to enable ligatures and kerning | https://developer.mozilla.org/en-US/docs/CSS/text-rendering */
 }
 
-h2 {
-  font-size: 48px;
-  font-size: 2.6667rem; /* 48 / 18 = 2.6667 */
-  margin-bottom: 11.1375px;
-  margin-bottom: 0.61875rem;
+body {
+  font-family: 'Lato', sans-serif;
+  color: #444;
 }
 
-p {
-  margin: auto auto 1.5em; /* bottom margin for paragraphs */
+section {
+  clear: both;
 }
 
-p + p {
-  margin-top: 1em; /* no top margin on subsequent paragraphs */
-}
+
 .wrapper{
   width: 75%;
   margin: 0 auto;
@@ -41,41 +136,72 @@ p + p {
 }
 
 .social-links {
-  border-top: 1px solid #888;
+  width: 100%;
+  display: inline-block;
+  background-color: #EEE;
+  padding-bottom: .8em;
+  border-bottom: 1px solid #EEE;
+}
+
+ul {
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  margin: 1em auto;
+  list-style: none;
+  text-align: center;
 }
 
 .social-links ul{
-  list-style: none;
-  width: 100%;
-  clear: both;
+  width: 95%;
 }
 
 .social-links ul li{
   float: left;
-  margin-right: 10px;
+  width: 20%;
+  margin-right: -10px;
 }
 
-.github_link,
-.dribbble_link{
+[class^="icon-"], [class*=" icon-"] {
+  color: #AAA;
+  font-size: 3em;
+  line-height: .6em;
+}
+
+[class^="icon-"]:hover, [class*=" icon-"]:hover {
+  color: #888;
+  font-size: 3em;
+}
+
+.screen-reader-text { /* Reusable, toolbox kind of class */
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.resume-paragraph {
+  margin-top: 0;
+  float: left;
+  width: 70%;
+}
+
+.resume-link {
+  float: right;
+  width: 25%;
+  margin-top: 1em;
+}
+
+.work-image {
+  width: 100%;
+  height: 5em;
+  background-color: red;
+}
+.works {
+  border: 1px solid orange;
+}
+.works li{
   display: inline-block;
-  text-indent: 9999px;
-  width: 40px;
-  height: 40px;
-  background: url(../svg/icon_font.svg);
-  opacity: 0.6;
+  width: 100%;
+  border: 1px solid green;
+  padding: 0;
+  margin: 0;
 }
-
-.dribbble_link {
-  background-position: -40px 0;
-}
-
-.github_link:hover,
-.dribbble_link:hover {
-  opacity: 1;
-}
-
-
-
-
-
-
