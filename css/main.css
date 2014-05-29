@@ -1,0 +1,22 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  background: red; }
+
+.element {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 48.82117%; }
+  .element:last-child {
+    margin-right: 0; }
+  .element .nested-element {
+    float: left;
+    display: block;
+    margin-right: 4.82916%;
+    width: 30.11389%; }
+    .element .nested-element:last-child {
+      margin-right: 0; }

@@ -1,0 +1,14 @@
+@import "bourbon";
+@import "neat";
+
+
+body {
+  background: red;
+}
+.element {
+  @include span-columns(6);
+
+  .nested-element {
+    @include span-columns(2 of 6);
+  }
+}
