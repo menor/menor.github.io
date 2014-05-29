@@ -2,48 +2,86 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Jose Menor</title>
+  <title>Document</title>
   <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
-  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  <!-- This is included for later use -->
-  <img src="svg/icon_font.svg" style="display:none"></img>
-
+  <section class="social-links">
+    
+    <ul>
+     <li>
+        <a class="github_link" href="https://github.com/menor/">
+          <span aria-hidden="true" data-icon="&#xe801;" class="icon-github"></span>
+          <span class="screen-reader-text">GitHub</span>
+        </a>
+      </li>
+     <li>
+        <a class="dribbble_link" href="https://dribbble.com/josemenor">
+          <span aria-hidden="true" data-icon="&#xe802;" class="icon-dribbble"></span>
+          <span class="screen-reader-text">Dribbble</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://scriptogr.am/menor/">
+          <span aria-hidden="true" data-icon="&#xe803;" class="icon-blog"></span>
+          <span class="screen-reader-text">Blog</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/menor">
+          <span aria-hidden="true" data-icon="&#xe804;" class="icon-twitter"></span>
+          <span class="screen-reader-text">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/josemenor">
+          <span aria-hidden="true" data-icon="&#xe805;" class="icon-linkedin"></span>
+          <span class="screen-reader-text">GitHub</span>    
+        </a>
+      </li>
+     </ul> 
+  </section>
   <div class="wrapper">
     <img class="logo" src="svg/logo_sub.svg"></img>
 
-    <section class="social-links">
 
-      
-      <ul>
-         <li>
-            <a class="github_link" href="https://github.com/menor/">GitHub</a>
-          </li>
-         <li>
-            <a class="dribbble_link" href="https://dribbble.com/josemenor">Dribbble</a>
-          </li>
-         <li><a href="http://scriptogr.am/menor/">Blog</a></li>
-         <li><a href="https://twitter.com/menor">Twitter</a></li>
-         <li><a href="https://www.linkedin.com/in/josemenor">LinkedIn</a></li>
-       </ul> 
-    </section>
+    <section class="about">
+      <article>
+        <p>
+          I've been a graphic designer for more than 10 years, and always loved web development. So I decided to go to San Francisco and become a web developer. After 9 weeks at Dev Bootcamp, I can say I made the right choice.
+        </p>
+      </article>
 
-    <section class="intro">
-      <p>
-        I've been a graphic designer for more than 10 years, and always loved web development. So I decided to go to San Francisco and become a web developer. After 9 weeks at Dev Bootcamp, I can say I made the right choice.
-      </p>
-      <p>
-        I know Ruby on Rails, Javascript, HTML, CSS and SASS, I believe that Test Driven Development and OO is the way to go (although I want to learn functional programming too), and of course know my way around git.
-      </p>
-      <p>
-        I'm currently in Europe, looking for an opportunity to help to create something useful, exciting and new.
-      </p>
-      <p class="resume-paragraph">
-        Does anyone download this things ??? anyways here is my resume
-        <a href="/jose_menor_resume.pdf" class="resume-link">Download Resume</a>
-      </p>
+      <article>
+        <h3>Skill-A-Rama</h3>
+        <p>
+          I know Ruby on Rails, Javascript, HTML, CSS and SASS, I believe that Test Driven Development and OO is the way to go (although I want to learn functional programming too), and of course know my way around git.
+        </p>
+        <p>
+          I've been working for so many years with Illustrator and Photoshop, that I almost always forget to mention it.
+        </p>
+      </article>
+
+      <article>
+        <h3>This time is personal</h3>
+        <p>
+          I'm currently in Europe, looking for an opportunity to help to create something useful, exciting and new.
+        </p>
+      </article>
+
+      <article>
+        <h3>It's a resume!!</h3>
+        <p class="resume-paragraph">
+          Does anyone download this things ??? Anyways here is my resume
+        </p>
+        <a href="/jose_menor_resume.pdf" class="resume-link">
+          <span aria-hidden="true" data-icon="&#xe806;" class="icon-resume"></span>
+          <span class="screen-reader-text">Download Resume</span>
+        </a>
+      </article>
+
     </section>
 
     <section class="portfolio">
@@ -52,7 +90,7 @@
         These include a little explanation about process to show how I work, you can check more graphic stuff at <a href="">my dribbble</a> and I'm always pushing code to <a href="">my GitHub</a>
       </p>
       <ul class="works">
-        <li><a href="">Better Bet</a></li>
+        <li><a href=""><img class="work-image" src="" alt=""></a></li>
         <li><a href="">Malgusto</a></li>
         <li><a href="">Poster Design</a></li>
         <li><a href="">Malgusto Stuff</a></li>
