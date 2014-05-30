@@ -200,27 +200,23 @@ dl {
   font-weight: normal;
   font-style: normal; }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+.icon-resume:before, .icon-blog:before, .icon-floppy:before, .icon-dribbble:before, .icon-github:before, .icon-instagram:before, .icon-linkedin:before, .icon-twitter:before {
   font-family: "menor_awesome";
   font-style: normal;
   font-weight: normal;
   speak: none;
-  display: inline-block;
+  color: #999;
+  font-size: 3em;
+  line-height: 0.6em;
+  opacity: 0.6;
   text-decoration: inherit;
-  width: 1em;
-  margin-right: 0.2em;
-  text-align: center;
-  /* opacity: .8; */
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
-  text-transform: none;
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  /* margin-left: .2em;*/
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */ }
+  text-transform: none; }
+
+.icon-resume:hover, .icon-blog:hover, .icon-floppy:hover, .icon-dribbble:hover, .icon-github:hover, .icon-instagram:hover, .icon-linkedin:hover, .icon-twitter:hover {
+  opacity: 0.6;
+  text-shadow: 2px 2px 2px rgba(127, 127, 127, 0.3); }
 
 .icon-resume:before {
   content: '\e806'; }
@@ -254,16 +250,16 @@ dl {
   content: '\e803'; }
 
 /* '' */
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px; }
+
 
 .wrapper {
-  float: left;
   display: block;
-  margin-right: 2.35765%;
-  width: 100%;
-  display: block;
-  border: 1px solid red; }
-  .wrapper:last-child {
-    margin-right: 0; }
+  width: 90%;
+  margin: 0 auto; }
   .wrapper:after {
     content: "";
     display: table;
@@ -271,7 +267,7 @@ dl {
 
 .social-links {
   display: block;
-  display: inline-block;
+  width: 100%;
   background-color: #EEE;
   padding-bottom: 0.8em;
   border-bottom: 1px solid #EEE; }
@@ -280,12 +276,32 @@ dl {
     display: table;
     clear: both; }
 
-.logo {
+.social-links ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%;
-  color: #999; }
+  padding-top: 1.8em; }
+  .social-links ul:last-child {
+    margin-right: 0; }
+
+.social-links ul li {
+  float: left;
+  display: block;
+  margin-right: 2.84259%;
+  width: 17.72593%;
+  text-align: center; }
+  .social-links ul li:last-child {
+    margin-right: 0; }
+
+.logo {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  opacity: 0.7;
+  margin-top: 1.8em;
+  margin-bottom: 1.8em; }
   .logo:last-child {
     margin-right: 0; }

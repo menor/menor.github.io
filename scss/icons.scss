@@ -10,32 +10,40 @@
   font-style: normal;
 }
 
-[class^="icon-"]:before, [class*=" icon-"]:before {
+.icon-resume:before,
+.icon-blog:before,
+.icon-floppy:before,
+.icon-dribbble:before,
+.icon-github:before,
+.icon-instagram:before,
+.icon-linkedin:before,
+.icon-twitter:before {
   font-family: "menor_awesome";
   font-style: normal;
   font-weight: normal;
   speak: none;
- 
-  display: inline-block;
+
+  color: $medium-gray;
+  font-size: 3em;
+  line-height: .6em;
+  opacity: .6;
   text-decoration: inherit;
-  width: 1em;
-  margin-right: .2em;
-  text-align: center;
-  /* opacity: .8; */
- 
+  
   /* For safety - reset parent styles, that can break glyph codes*/
   font-variant: normal;
   text-transform: none;
-  
-  /* Animation center compensation - margins should be symmetric */
-  /* remove if not needed */
-  /* margin-left: .2em;*/
- 
-  /* you can be more comfortable with increased icons size */
-  /* font-size: 120%; */
- 
-  /* Uncomment for 3D effect */
-  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-resume:hover,
+.icon-blog:hover,
+.icon-floppy:hover,
+.icon-dribbble:hover,
+.icon-github:hover,
+.icon-instagram:hover,
+.icon-linkedin:hover,
+.icon-twitter:hover {
+  opacity: .6;
+  text-shadow: 2px 2px 2px rgba(127, 127, 127, 0.3);
 }
 
 .icon-resume:before { content: '\e806'; } /* '' */
@@ -46,3 +54,9 @@
 .icon-instagram:before { content: '\e807'; } /* '' */
 .icon-linkedin:before { content: '\e804'; } /* '' */
 .icon-twitter:before { content: '\e803'; } /* '' */
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}

@@ -8,22 +8,36 @@ body {
 }
 
 .wrapper {
-  @include span-columns(12);
   @include row;
-  border: 1px solid red;
+  width: 90%;
+  margin: 0 auto;
+  // border: 1px solid red;
 }
 
 .social-links {
   @include row;
-  display: inline-block;
+  width: 100%;
   background-color: #EEE;
   padding-bottom: .8em;
   border-bottom: 1px solid #EEE;
 }
 
-
-.logo {
+.social-links ul{
   @include span-columns(10);
   @include shift(1);
-  color: #999;
+  padding-top: $base-line-height;
+}
+
+.social-links ul li{
+  @include span-columns(2 of 10);
+  // border: 1px solid red;
+  text-align: center;
+}
+
+
+.logo {
+  @include span-columns(12);
+  opacity: 0.7;
+  margin-top: $base-line-height;
+  margin-bottom: $base-line-height;
 }
