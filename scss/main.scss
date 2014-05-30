@@ -7,6 +7,10 @@ body {
 
 }
 
+article{
+  @include row;
+}
+
 
 .wrapper {
   @include row;
@@ -40,4 +44,15 @@ body {
   opacity: 0.7;
   margin-top: $base-line-height;
   margin-bottom: $base-line-height;
+}
+
+.resume-paragraph{
+  @include span-columns(10);
+  margin-top: 0;
+}
+
+.resume-link{
+  @include span-columns(2);
+  @include omega;
+  margin-top: 1em;
 }
