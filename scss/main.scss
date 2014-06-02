@@ -2,6 +2,7 @@
 @import "neat";
 @import "bitters/bitters";
 @import "icons";
+@import "footer";
 
 body {
 
@@ -85,8 +86,4 @@ input[type="submit"] {
   @include shift(6);
 }
 
-footer{
-  @include outer-container;
-  padding-top: $base-line-height;
-  background: $dark-gray;
-}
+
