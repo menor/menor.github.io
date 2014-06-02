@@ -61,3 +61,32 @@ article{
   width: 100%;
   max-width: em(960);
 }
+
+.contact-form {
+  @include outer-container;
+  margin-top: $base-line-height;
+  padding-bottom: $base-line-height;
+  background: $light-gray;
+  border-top: 1px solid $medium-gray;
+}
+
+.form-container {
+  @include row;
+  @include span-columns(10);
+  @include shift(1);
+}
+
+.email-option{
+  @include span-columns(6, 10);
+}
+
+input[type="submit"] {
+  @include span-columns(4 of 10);
+  @include shift(6);
+}
+
+footer{
+  @include outer-container;
+  padding-top: $base-line-height;
+  background: $dark-gray;
+}

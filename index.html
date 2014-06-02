@@ -100,21 +100,27 @@
       </ul>
     </section>
 
-    <section class="contact-form">
+  </div>
+
+  <section class="contact-form">
+    <div class="form-container">
       <h2>Make me an offer I can't refuse</h2>
       <form action="">
         <label for="name">Name:</label>
         <input type="text" name="name" required ></input>
         <label for="email">Email:</label>
-        <input type="email" value="email" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required></input>
+        <input type="email" name="email" pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/" required></input>
         <label for="message">Message:</label>
-        <input type="text" name="message" value="message" size="78"></input>
-        <input type="submit"></input>
+        <input type="text" name="message" size="78"></input>
+        <!-- <p class="email-option">You can <a href="mailto:jose@josemenor.com">send me an email</a> instead, if you prefer.</p> -->
+        <input type="submit" value="send"></input>
       </form>
-    </section>
+    </div>
+  </section>
 
+  <footer>
+   Jose Menor
+  </footer>
 
-
-  </div>
 </body>
 </html>

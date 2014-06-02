@@ -1,5 +1,4 @@
-button,
-input[type="submit"] {
+button {
   // @extend %button;
   // @include appearance(none);
   // cursor: pointer;
@@ -8,3 +7,9 @@ input[type="submit"] {
   // white-space:nowrap;
   @include button;
 }
+
+input[type="submit"] {
+      @include button(simple, $base-accent-color);
+      font-size: $base-font-size;
+      outline: none;
+    }
