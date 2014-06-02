@@ -56,3 +56,8 @@ article{
   @include omega;
   margin-top: 1em;
 }
+
+.work-image {
+  width: 100%;
+  max-width: em(960);
+}

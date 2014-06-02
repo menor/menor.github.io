@@ -304,3 +304,7 @@ article {
   margin-top: 1em; }
   .resume-link:last-child {
     margin-right: 0; }
+
+.work-image {
+  width: 100%;
+  max-width: 60em; }
