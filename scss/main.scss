@@ -64,11 +64,12 @@ article{
 }
 
 .contact-form {
-  @include outer-container;
+  @include row;
+  width: 100%;
   margin-top: $base-line-height;
   padding-bottom: $base-line-height;
   background: $light-gray;
-  border-top: 1px solid $medium-gray;
+  border-top: 1px solid $base-accent-color;
 }
 
 .form-container {
