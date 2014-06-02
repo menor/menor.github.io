@@ -353,22 +353,23 @@ article {
 
 .social-links {
   display: block;
-  width: 100%;
   background-color: #EEE;
-  padding-bottom: 0.8em;
-  border-bottom: 1px solid #EEE; }
+  padding: 2.22475rem 0 0.8em; }
   .social-links:after {
     content: "";
     display: table;
     clear: both; }
+  @media screen and (min-width: 40em) {
+    .social-links {
+      font-size: 0.84981rem;
+      padding: 1.11238rem 0 0.55619rem; } }
 
 .social-links ul {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
-  margin-left: 8.5298%;
-  padding-top: 2.22475rem; }
+  margin-left: 8.5298%; }
   .social-links ul:last-child {
     margin-right: 0; }
 
@@ -381,16 +382,56 @@ article {
   .social-links ul li:last-child {
     margin-right: 0; }
 
+header {
+  display: block; }
+  header:after {
+    content: "";
+    display: table;
+    clear: both; }
+
 .logo {
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 100%;
-  opacity: 0.7;
-  margin-top: 2.22475rem;
-  margin-bottom: 2.22475rem; }
+  margin: 1.11238rem 0 2.22475rem;
+  opacity: 0.7; }
   .logo:last-child {
     margin-right: 0; }
+  @media screen and (min-width: 40em) {
+    .logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-left: 25.58941%; }
+      .logo:last-child {
+        margin-right: 0; } }
+  @media screen and (min-width: 53.75em) {
+    .logo {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%;
+      margin-left: 34.11922%; }
+      .logo:last-child {
+        margin-right: 0; } }
+
+.about {
+  display: block; }
+  .about:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+@media screen and (min-width: 40em) {
+  .about p {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .about p:last-child {
+      margin-right: 0; } }
 
 .resume-paragraph {
   float: left;
@@ -411,9 +452,22 @@ article {
   .resume-link:last-child {
     margin-right: 0; }
 
+@media screen and (min-width: 40em) {
+  .works li {
+    float: left;
+    display: block;
+    margin-right: 2.35765%;
+    width: 48.82117%; }
+    .works li:last-child {
+      margin-right: 0; } }
+
 .work-image {
-  width: 100%;
-  max-width: 60em; }
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%; }
+  .work-image:last-child {
+    margin-right: 0; }
 
 .contact-form {
   display: block;

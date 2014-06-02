@@ -22,29 +22,50 @@ article{
 
 .social-links {
   @include row;
-  width: 100%;
   background-color: #EEE;
-  padding-bottom: .8em;
-  border-bottom: 1px solid #EEE;
+  padding: $base-line-height 0 0.8em;
+  @include media( $medium-screen ){
+    font-size: $base-font-size / 1.618;
+    padding: $base-line-height/2 0 $base-line-height/4;
+  }
 }
 
 .social-links ul{
   @include span-columns(10);
   @include shift(1);
-  padding-top: $base-line-height;
 }
 
 .social-links ul li{
   @include span-columns(2 of 10);
-  // border: 1px solid red;
   text-align: center;
+}
+
+header {
+  @include row;
 }
 
 .logo {
   @include span-columns(12);
+  margin: $base-line-height/2 0 $base-line-height;
   opacity: 0.7;
-  margin-top: $base-line-height;
-  margin-bottom: $base-line-height;
+  @include media( $medium-screen ){
+    @include span-columns(6);
+    @include shift(3);
+  }
+  @include media( $large-screen ){
+    @include span-columns(4);
+    @include shift(4);
+  }
+}
+
+.about {
+  @include row;
+}
+
+.about p{
+  @include media( $medium-screen ){
+    @include span-columns(6);
+  }
 }
 
 .resume-paragraph{
@@ -58,9 +79,15 @@ article{
   margin-top: 1em;
 }
 
+.works li {
+  @include media( $medium-screen ){
+    @include span-columns(6);
+  }
+}
+
 .work-image {
-  width: 100%;
-  max-width: em(960);
+  @include span-columns(12);
+  $gutter: 1em;
 }
 
 .contact-form {
