@@ -24,7 +24,7 @@ article{
   @include row;
   background-color: #EEE;
   padding: $base-line-height 0 0.8em;
-  @include media( $medium-screen ){
+  @include media( $medium-screen-up ){
     font-size: $base-font-size / 1.618;
     padding: $base-line-height/2 0 $base-line-height/4;
   }
@@ -48,7 +48,7 @@ header {
   @include span-columns(12);
   margin: $base-line-height/2 0 $base-line-height;
   opacity: 0.7;
-  @include media( $medium-screen ){
+  @include media( $medium-screen-up ){
     @include span-columns(6);
     @include shift(3);
   }
@@ -58,13 +58,18 @@ header {
   }
 }
 
+h4 {
+  border-bottom: 1px solid $light-gray;
+}
+
 .about {
   @include row;
 }
 
-.about p{
-  @include media( $medium-screen ){
+.about article{
+  @include media( $medium-screen-up ){
     @include span-columns(6);
+    @include omega(2n)
   }
 }
 
@@ -80,8 +85,10 @@ header {
 }
 
 .works li {
-  @include media( $medium-screen ){
+  margin-top: $base-line-height;
+  @include media( $medium-screen-up ){
     @include span-columns(6);
+    @include omega(2n)
   }
 }
 
