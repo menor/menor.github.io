@@ -23,7 +23,7 @@
   font-weight: normal;
   speak: none;
 
-  color: $medium-gray;
+  color: $lamp-shade;
   font-size: 3em;
   line-height: .6em;
   opacity: .6;
@@ -42,7 +42,7 @@
 .icon-instagram:hover,
 .icon-linkedin:hover,
 .icon-twitter:hover {
-  opacity: .6;
+  opacity: 1;
   text-shadow: 2px 2px 2px rgba(127, 127, 127, 0.3);
 }
 
