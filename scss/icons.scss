@@ -23,10 +23,10 @@
   font-weight: normal;
   speak: none;
 
-  color: $lamp-shade;
+  color: $juice;
   font-size: 3em;
   line-height: .6em;
-  opacity: .6;
+  opacity: 1;
   text-decoration: inherit;
   
   /* For safety - reset parent styles, that can break glyph codes*/
@@ -42,7 +42,7 @@
 .icon-instagram:hover,
 .icon-linkedin:hover,
 .icon-twitter:hover {
-  opacity: 1;
+  opacity: .6;
   text-shadow: 2px 2px 2px rgba(127, 127, 127, 0.3);
 }
 

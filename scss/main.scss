@@ -5,26 +5,23 @@
 @import "footer";
 
 body {
-  color: $cocoa;
+  background: $base-body-color;
+  color: $base-font-color;
 }
 
 article{
   @include row;
 }
 
-
 .wrapper {
-  @include row;
-  width: 90%;
-  margin: 0 auto;
-  // border: 1px solid red;
+  @include outer-container;
 }
 
 .social-links {
   @include row;
   background-color: $cocoa;
   padding: $base-line-height 0 0.8em;
-  border-bottom: solid 4px $go-flow;
+  border-bottom: solid 4px $pucker;
   @include media( $medium-screen-up ){
     font-size: $base-font-size / 1.618;
     padding: $base-line-height/2 0 $base-line-height/4;
@@ -57,21 +54,24 @@ header {
   }
   @include media( $large-screen ){
     @include span-columns(4);
-    @include shift(4);
+    @include shift(1); 
+    padding-top: $base-line-height/2;
   }
 }
 
 h4 {
-  border-bottom: 1px solid $light-gray;
+  margin-bottom: $base-line-height/4;
 }
 
 .about {
   @include row;
+  @include span-columns(10);
+  @include shift(1);
 }
 
 .about article{
   @include media( $medium-screen-up ){
-    @include span-columns(6);
+    @include span-columns(5 of 10);
     @include omega(2n)
   }
 }

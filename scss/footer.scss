@@ -1,6 +1,6 @@
 footer {
   $footer-background: $cocoa;
-  $footer-color: white;
+  $footer-color: $dry-ice;
   $footer-link-color: transparentize($footer-color, .6);
   
   @include row;
@@ -8,7 +8,7 @@ footer {
   background: $footer-background;
   padding-top: $base-line-height/4;
   margin-bottom: 0;
-  border-top: solid 4px $go-flow;
+  border-top: solid 4px $base-border-color;
 
 }
 
@@ -29,7 +29,7 @@ footer {
   @include shift(1);
   font-size: $base-font-size/1.5;
   line-height: $base-font-size;
-  color: $light-gray;
+  color: $dry-ice;
   text-align: center;
 }
 
