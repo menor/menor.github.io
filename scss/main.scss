@@ -60,10 +60,10 @@ header {
 }
 
 h4 {
-  margin-bottom: $base-line-height/4;
+  margin-bottom: - $base-line-height/4;
 }
 
-.about {
+.about, .portfolio {
   @include row;
   @include span-columns(10);
   @include shift(1);
@@ -78,31 +78,33 @@ h4 {
 
 .resume-paragraph{
   @include span-columns(10);
-  margin-top: 0;
 }
 
 .resume-link{
   @include span-columns(2);
   @include omega;
-  margin-top: 1em;
+  margin-top: 2em;
+  color: $lime;
+  @include media( $medium-screen-up ){
+    margin-top: 1.5em;
+  }
 }
 
 .works li {
-  margin-top: $base-line-height;
-  @include media( $medium-screen-up ){
+  @include media( $large-screen-up ){
     @include span-columns(6);
-    @include omega(2n)
+    @include omega(2n);
   }
 }
 
 .work-image {
   @include span-columns(12);
   $gutter: 1em;
+  margin-top: 1em;
 }
 
 .contact-form {
   @include row;
-  width: 100%;
   margin-top: $base-line-height;
   padding-bottom: $base-line-height;
   background: $creamy-cat;
@@ -113,10 +115,14 @@ h4 {
   @include row;
   @include span-columns(10);
   @include shift(1);
-}
-
-.email-option{
-  @include span-columns(6, 10);
+  @include media( $medium-screen-up ){
+    @include span-columns(8);
+    @include shift(2);
+  }
+  @include media( $large-screen-up ){
+    @include span-columns(6);
+    @include shift(3);
+  }
 }
 
 input[type="submit"] {
