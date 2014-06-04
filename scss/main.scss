@@ -103,7 +103,7 @@ h4 {
   margin-top: 1em;
 }
 
-.contact-form {
+.contact{
   @include row;
   margin-top: $base-line-height;
   padding-bottom: $base-line-height;
@@ -111,7 +111,7 @@ h4 {
   border-top: 4px solid $base-accent-color;
 }
 
-.form-container {
+.contact-container {
   @include row;
   @include span-columns(10);
   @include shift(1);
@@ -123,11 +123,14 @@ h4 {
     @include span-columns(6);
     @include shift(3);
   }
+
+  p { 
+    font-size: $base-font-size * 1.2;
+  }
 }
 
-input[type="submit"] {
-  @include span-columns(4 of 10);
-  @include shift(6);
+.mal{
+  color: $lime;
 }
 
 
