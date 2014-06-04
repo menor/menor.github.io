@@ -561,3 +561,21 @@ nav {
 
 .mal {
   color: #59A80F; }
+
+.project-nav {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  margin-top: 2em;
+  border-top: 1px solid #9ED54C; }
+  .project-nav:last-child {
+    margin-right: 0; }
+
+.project-nav li {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%; }
+  .project-nav li:last-child {
+    margin-right: 0; }

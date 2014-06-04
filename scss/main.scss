@@ -148,4 +148,13 @@ nav {
   color: $lime;
 }
 
+.project-nav{
+  @include span-columns(12);
+  margin-top: 2em;
+  border-top: 1px solid $base-accent-color;
+}
+.project-nav li{
+  @include span-columns(4);
+}
+
 
