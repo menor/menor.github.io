@@ -412,18 +412,18 @@ header {
 h4 {
   margin-bottom: -0.4854rem; }
 
-.about, .portfolio {
+.about, .portfolio, .project {
   display: block;
   float: left;
   display: block;
   margin-right: 2.35765%;
   width: 82.94039%;
   margin-left: 8.5298%; }
-  .about:after, .portfolio:after {
+  .about:after, .portfolio:after, .project:after {
     content: "";
     display: table;
     clear: both; }
-  .about:last-child, .portfolio:last-child {
+  .about:last-child, .portfolio:last-child, .project:last-child {
     margin-right: 0; }
 
 @media screen and (min-width: 40em)  {
@@ -438,6 +438,22 @@ h4 {
       margin-right: 0; }
     .about article:nth-child(2n+1) {
       clear: left; } }
+
+.project {
+  display: block; }
+  .project:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 53.75em)  {
+    .project {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-left: 17.05961%; }
+      .project:last-child {
+        margin-right: 0; } }
 
 .resume-paragraph {
   float: left;
@@ -481,6 +497,21 @@ h4 {
   width: 100%;
   margin-top: 1em; }
   .work-image:last-child {
+    margin-right: 0; }
+
+nav {
+  display: block;
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 82.94039%;
+  margin-left: 8.5298%;
+  text-align: center; }
+  nav:after {
+    content: "";
+    display: table;
+    clear: both; }
+  nav:last-child {
     margin-right: 0; }
 
 .contact {

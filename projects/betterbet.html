@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Jose Menor - Better Bet</title>
+<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/main.css">
+
+</head>
+<body>
+
+  <section class="social-links">
+    
+    <ul>
+     <li>
+        <a class="github_link" href="https://github.com/menor/">
+          <span aria-hidden="true" data-icon="&#xe801;" class="icon-github"></span>
+          <span class="screen-reader-text">GitHub</span>
+        </a>
+      </li>
+     <li>
+        <a class="dribbble_link" href="https://dribbble.com/josemenor">
+          <span aria-hidden="true" data-icon="&#xe802;" class="icon-dribbble"></span>
+          <span class="screen-reader-text">Dribbble</span>
+        </a>
+      </li>
+      <li>
+        <a href="http://scriptogr.am/menor/">
+          <span aria-hidden="true" data-icon="&#xe803;" class="icon-blog"></span>
+          <span class="screen-reader-text">Blog</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://twitter.com/menor">
+          <span aria-hidden="true" data-icon="&#xe804;" class="icon-twitter"></span>
+          <span class="screen-reader-text">Twitter</span>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/josemenor">
+          <span aria-hidden="true" data-icon="&#xe805;" class="icon-linkedin"></span>
+          <span class="screen-reader-text">GitHub</span>    
+        </a>
+      </li>
+     </ul> 
+  </section>
+  <div class="wrapper">
+
+    <header>
+      <img class="logo" src="../svg/logo_sub.svg"></img>
+    </header>
+
+
+<section class="project">
+<h1>Better Bet</h1>
+
+<div class="block">
+<h2>Brief</h2>
+
+<p><a href="https://github.com/banana-slugs-2014/BetterBet">BetterBet</a> was my final project at Dev Bootcamp, I was assigned to a 5 people (including me) team and we had five days to make a complete web app. The app was a goal tracker with a social network aspect, it let you bet real money against friends on you completing a goal in a given time.</p>
+
+</div>
+<div class="block">
+<h2>Tech Stack</h2>
+
+<p>It was Rails and Postgres in the backend, Sass and Javascript in the front end. Stripe and Facebook APIs were used too.</p>
+</div>
+
+<div class="block">
+<h2>Team Role</h2>
+
+<p>My main role here was being the front end guy, we met at first and decided on features, MVP and who was going to handle each feature, we had 4 stand ups a day, and worked really long hours to get this done.</p>
+</div>
+<div class="block">
+<h2>Limitations</h2>
+
+<p>I was familiar with the <a href="neat.bourbon.io">Neat</a> framework from <a href="http://thoughtbot.com/">Thoughbot</a>, I love this framework because it is very simple and flexible, and keeps the HTML and CSS free of presentation class names. It also allows you to prototype and try ideas really fast, and takes care of a lot of browser render differences. So, having just 5 days to complete the project, Neat was the way to go.</p>
+</div>
+
+<div class="block">
+<h2>Process</h2>
+
+<p>For the styling side, we decided to go mobile first, the problem was that the app had a lot of content to show on a small screen. So I compiled a content inventory of all the content we needed to show, and under which section it should appear.</p>
+
+<p>Then looking at that list I tried to figure how each piece related to the others and use that to create modules of content that we could reuse on several pages. We were using Rails so taking advantage of partials was the right thing to do.</p>
+
+<p>I created a basic wireframe in plain CSS to have an idea of how much screen space each module was going to take. With that knowledge I created sketches of actual modules and played with layout, colour and typography in Illustrator.</p>
+
+<p>Once I got an idea of where I was going I started coding the HTML and CSS, actually I used SASS which made my life a lot easier.</p>
+</div>
+<div class="block">
+<h2>Crisis</h2>
+
+<p>Two days from our presentation and crisis showed up, I was sited next to <a href="ladymozzarella.github.io">Brittany Mazza</a>, she was writing the tests and I was doing the styling and we were going crazy. We had lots of different views for each model, so every time we wanted to test or style something we have to do it in at least three different places. Luckily we decided to take the bull by the horns and spend a couple of hours going through each piece of code and merging all the different views into a system that made sense. After we did that, it was a joy to work on that codebase.</p>
+</div>
+
+<div class="block">
+<h2>Lessons learned</h2>
+
+<p>Communicate, I know it's a topic but its importance is vital to a project. We have some moments where different people in the team were changing the codebase, i.e., the person doing the Javascript changes a class name, and the team leader merges the pull request, then the person doing the styling pulls form master and its design is broken. CSS is hard because you can't not run tests on it (although now you can use something like <a href="https://github.com/diffux/diffux">Diffux</a>, I wish I had known it before this project), so you have to make clear that everyone changing views knows the logic behind class names. You can use some standard like SMACSS or BEM, but even though you have to communicate.</p>
+</div>
+</section>
+<nav>
+  previous Home next
+</nav>
+</div>
+<section class="contact">
+    <div class="contact-container">
+      <h2>Make me an offer I can't refuse</h2>
+      <p>
+        You can reach me at: <span class="mal">jose[at]josemenor.com</span>
+      </p>
+      <p>
+        Or through your favourite <a href="#">social thing</a>
+      </p>
+    </div>
+</section>
+
+
+<footer>
+  <div class="addendum">
+    <p>Site made by Jos&eacute Menor himself, using <a href="http://gulpjs.com/">Gulp</a>, <a href="http://bourbon.io/">Bourbon</a> and <a href="http://neat.bourbon.io/">Neat</a>. Source is on GitHub</p>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -63,16 +63,24 @@ h4 {
   margin-bottom: - $base-line-height/4;
 }
 
-.about, .portfolio {
+.about, .portfolio, .project {
   @include row;
   @include span-columns(10);
   @include shift(1);
 }
 
-.about article{
+.about article {
   @include media( $medium-screen-up ){
     @include span-columns(5 of 10);
     @include omega(2n)
+  }
+}
+
+.project {
+  @include row;
+  @include media( $large-screen-up ){
+    @include span-columns(8);
+    @include shift(2);
   }
 }
 
@@ -101,6 +109,13 @@ h4 {
   @include span-columns(12);
   $gutter: 1em;
   margin-top: 1em;
+}
+
+nav {
+  @include row;
+  @include span-columns(10);
+  @include shift(1);
+  text-align: center;
 }
 
 .contact{
