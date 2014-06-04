@@ -54,8 +54,9 @@
 
 
 <section class="project">
-<h1>Better Bet</h1>
 
+<h1>Better Bet</h1>
+<img class="header-image" src="../img/betterbet.png" alt="Better Bet">
 <div class="block">
 <h2>Brief</h2>
 
@@ -83,23 +84,33 @@
 <h2>Process</h2>
 
 <p>For the styling side, we decided to go mobile first, the problem was that the app had a lot of content to show on a small screen. So I compiled a content inventory of all the content we needed to show, and under which section it should appear.</p>
+<img class="project-image" src="../img/projects/betterbet_inventory.png" alt="Better Bet Content Inventory">
+
 
 <p>Then looking at that list I tried to figure how each piece related to the others and use that to create modules of content that we could reuse on several pages. We were using Rails so taking advantage of partials was the right thing to do.</p>
 
 <p>I created a basic wireframe in plain CSS to have an idea of how much screen space each module was going to take. With that knowledge I created sketches of actual modules and played with layout, colour and typography in Illustrator.</p>
 
+<img class="project-image" src="../img/projects/betterbet_sketch.jpg" alt="Better Bet Sketch">
+
 <p>Once I got an idea of where I was going I started coding the HTML and CSS, actually I used SASS which made my life a lot easier.</p>
 </div>
+<img class="project-image" src="../img/projects/betterbet_goal-card.png" alt="Better Bet Goal Card">
 <div class="block">
 <h2>Crisis</h2>
 
-<p>Two days from our presentation and crisis showed up, I was sited next to <a href="ladymozzarella.github.io">Brittany Mazza</a>, she was writing the tests and I was doing the styling and we were going crazy. We had lots of different views for each model, so every time we wanted to test or style something we have to do it in at least three different places. Luckily we decided to take the bull by the horns and spend a couple of hours going through each piece of code and merging all the different views into a system that made sense. After we did that, it was a joy to work on that codebase.</p>
+<p>Two days from our presentation and crisis showed up, I was sited next to <a href="ladymozzarella.github.io">Brittany Mazza</a>, she was writing the tests and I was doing the styling and we were going crazy. We had lots of different views for each model, so every time we wanted to test or style something we have to do it in at least three different places.</p>
+<p>Luckily we decided to take the bull by the horns and spend a couple of hours going through each piece of code and merging all the different views into a system that made sense. After we did that, it was a joy to work on that codebase.</p>
 </div>
 
 <div class="block">
 <h2>Lessons learned</h2>
 
-<p>Communicate, I know it's a topic but its importance is vital to a project. We have some moments where different people in the team were changing the codebase, i.e., the person doing the Javascript changes a class name, and the team leader merges the pull request, then the person doing the styling pulls form master and its design is broken. CSS is hard because you can't not run tests on it (although now you can use something like <a href="https://github.com/diffux/diffux">Diffux</a>, I wish I had known it before this project), so you have to make clear that everyone changing views knows the logic behind class names. You can use some standard like SMACSS or BEM, but even though you have to communicate.</p>
+<p>Communicate, I know it's a topic but its importance is vital to a project. We have some moments where different people in the team were changing the codebase, i.e., the person doing the Javascript changes a class name, and the team leader merges the pull request, then the person doing the styling pulls form master and its design is broken.</p>
+<p>CSS is hard because you can't not run tests on it (although now you can use something like <a href="https://github.com/diffux/diffux">Diffux</a>, I wish I had known it before this project), so you have to make clear that everyone changing views knows the logic behind class names. You can use some standard like SMACSS or BEM, but even though you have to communicate.</p>
+<p>
+  You can visit BetterBet <a href=" http://betterbet.herokuapp.com/">here</a> landing page is not that great, but awesomeness awaits you if you login as test@example.com with 1234 as password .
+</p>
 </div>
 </section>
 <nav>
