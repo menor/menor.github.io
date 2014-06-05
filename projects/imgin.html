@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-<title>Jose Menor - Survey Slug</title>
+<title>Jose Menor - ImgIn</title>
 <link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="../css/normalize.css">
   <link rel="stylesheet" href="../css/main.css">
@@ -55,30 +55,34 @@
     </header>
 
   <section class="project">
-    <h1>Survey Slug</h1>
+    <h1>ImgIn Ruby Gem</h1>
     
-    <img class="header-image" src="../img/surveyslug.png" alt="Malgusto web">
+    <img class="header-image" src="../img/imgin.png" alt="Malgusto web">
     <div class="block">
-      <h2>Brief</h2>
-      <p>Survey Slug was a project created at Dev Bootcamp, it was a weekend project with a 5 people team, and the objective was creating a Survey Gorilla Clone.</p>
+      <p>This was a project I did while at Dev Bootcamp, it was made with a four person team in a couple of days. We decided to create a gem that help to populate mockup site designs with related images, it looked easy: run a google image search with the query, get the images links from there and insert that into your view using <code>Imgin::Image.get( 'sloths', 'medium' )</code>.</p>
     </div>
     
     <div class="block">
-      <h2>Is that a Framework in your pants?</h2>
-      <p>Having a couple of days and quite a few views to render, going to a framework fo the styling was a no-brainer. I picked my favourite one: Bourbon, and this time included the default skeleton from Bitters.</p>
-      <img class="project-image" src="../img/projects/surveyslug-1.png" alt="Survey Slug">
-      <p>I don't remember a lot from this project, since it was all going so fast I didn't have time to take notes. In the end it works responsively, and although it's too generic and 'frameworky' it was the best looking one among all the projects presented that day.</p>
-      <img class="project-image" src="../img/projects/surveyslug-2.png" alt="Survey Slug">
-      <p>You can visit <a href="http://surveyslug.herokuapp.com/">Survey Slug</a> if you want to take a look. Thanks to <a href="http://ladymozzarella.github.io/">Brittany Mazza</a> for the screenshots.</p> Source code is <a href="https://github.com/menor/survey_slug">here</a>
+      <h2>It looked easy</h2>
+      <p>Yes, but problems arise, Google masks its Image search results with a lot of characters, and it wasn't clear how the thing was encoded. We looked at different solutions like the Flickr API, but time was scarce and there was also the problem of bandwidth limitations. Since this was a Gem, if people uses it to call Flickr we could be banned from the service pretty soon.</p>
     </div>
-
+    
+    <div class="block">
+      <h2>Yahoo to the rescue</h2>
+      <p>It was all lost, but then someone pointed to Yahoo search, its search results were a lot less obfuscated than Google ones, it still took a while to decipher it, but I copied the queries and pasted it in Sublime text, where colouring and find and replace helped to refine the query.</p>
+    </div>
+     <div class="block">
+      <h2>Nokogiri</h2>
+        <p>Once I figured out how the queries URL worked, it was just a matter of running the queries through the Nokogiri gem, parsing the links to the images using some Regex mojo, putting that into an array and returning a random one. The good thing is that the links saved in the array were to the actual images, not to Yahoo search, so you end up with images in your mockups from a lot of different sources, and chances of being banned for making too many calls to a service.</p>
+        <p>The gem is published although we haven-t touched it since then, you can take a look at it <a href="http://rubygems.org/gems/imgin">here</a> source code is <a href="https://github.com/LadyMozzarella/Imgin">here</a></p>
+    </div>
   </section>
 
   <nav>
     <ul class="project-nav">
-      <li><a href="gigposters.html">&larr; Previous</a></li>
+      <li><a href="malgusto.html">&larr; Previous</a></li>
       <li><a href="../index.html">Home</a></li>
-      <li><a href="malgusto.html">Next &rarr;</a></li>
+      <li>Next &rarr;</li>
     </ul>
   </nav>
 
