@@ -579,3 +579,28 @@ nav {
   width: 31.76157%; }
   .project-nav li:last-child {
     margin-right: 0; }
+
+.image-caption {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 100%;
+  height: 5.8248rem;
+  background: rgba(255, 255, 255, 0.9);
+  margin-top: -5.8248rem; }
+  .image-caption:last-child {
+    margin-right: 0; }
+
+.image-caption:hover {
+  background: rgba(158, 213, 76, 0.8);
+  margin-top: -5.8248rem; }
+
+.image-caption h3, .image-caption p {
+  padding-left: 20px;
+  color: #5C483A; }
+
+.image-caption h3 {
+  margin-bottom: -0.9708rem; }
+
+.image-caption p {
+  margin-top: 0.4854rem; }

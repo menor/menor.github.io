@@ -157,4 +157,30 @@ nav {
   @include span-columns(4);
 }
 
+.image-caption {
+  @include span-columns(12);
+  height: $base-line-height*3;
+  background: transparentize(white, 0.1);
+  margin-top: - $base-line-height*3;
+}
+
+.image-caption:hover {
+  background: transparentize($base-accent-color, 0.2);
+  margin-top: - $base-line-height*3;
+}
+
+.image-caption h3,
+.image-caption p {
+  padding-left: 20px;
+  color: $cocoa;
+}
+
+.image-caption h3 {
+  margin-bottom: -$base-line-height/2;
+}
+
+.image-caption p{
+  margin-top: $base-line-height/4;
+}
+
 
